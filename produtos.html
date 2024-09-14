@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>BEAKS</h1>
+        <nav>
+            <a href="inicio.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="carrinho.html">Carrinho (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="product-details">
+            <script>               
+                const urlParams = new URLSearchParams(window.location.search);
+                const productName = urlParams.get('name');
+                const productPrice = urlParams.get('price');
+
+                document.write(`
+                    <h2>${productName}</h2>
+                    <p>Preço: R$ ${productPrice}</p>
+                    <button onclick="addToCart('${productName}', ${productPrice})">Adicionar ao Carrinho</button>
+                `);
+            </script>
+        </section>
+    </main>
+
+    <footer>
+        <p>PLODUTO OLIXINAU&copy;</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>BEAKS</h1>
+        <nav>
+            <a href="inicio.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="carrinho.html">Carrinho (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="products">
+            <article class="product">
+                <img src="C:\Users\codeB\Documents\BEAKS\PHOTO-2024-08-24-14-34-54 (1).jpg" alt="Produto 1" width="150" height="150">
+                <h2>Produto 1</h2>
+                <p>R$ 49,90</p>
+                <button onclick="addToCart('CAMISA MALANDRO', 49,90)">Adicionar ao Carrinho</button>
+            </article>
+            <article class="product">
+                <img src="C:\Users\codeB\Documents\BEAKS\PHOTO-2024-08-24-14-34-54 (2).jpg" alt="Produto 2" width="150" height="150">
+                <h2>Produto 2</h2>
+                <p>R$ 49,90</p>
+                <button onclick="addToCart('CAMISA OGUM', 49,90)">Adicionar ao Carrinho</button>
+            </article>
+            
+    </main>
+
+      <center><footer><p>PLODUTO OLIXINAU&copy;</p></footer></center> 
+    
+    <script src="script.js"></script>
+</body>
+</html>
